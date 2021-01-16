@@ -7,13 +7,13 @@ const galleryItems = [
   },
   {
     id: 2,
-    path: "images/goat_small.jpg",
-    description: "Photo of a goat taken at Glacier National Park.",
+    path: "images/drill_meme.jpg",
+    description: "Funny meme",
     likes: 0,
   },
   {
     id: 3,
-    path: "images/goat_small.jpg",
+    path: "public/images/elevated_basket_disc_golf.jpeg",
     description: "Photo of a goat taken at Glacier National Park.",
     likes: 0,
   },
