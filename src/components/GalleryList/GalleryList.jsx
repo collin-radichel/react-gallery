@@ -1,5 +1,4 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'
-import Container from 'react-bootstrap/Container'
 
 
 function GalleryList ({
