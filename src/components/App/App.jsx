@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import { useState, useEffect} from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -36,6 +35,7 @@ function App() {
         </header>
         <GalleryList
         gallery={gallery}
+        getGallery={getGallery}
         />
       </div>
     );

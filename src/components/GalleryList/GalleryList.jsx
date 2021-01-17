@@ -1,8 +1,10 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'
-import '../GalleryList/GalleryList.css'
+import Container from 'react-bootstrap/Container'
+
 
 function GalleryList ({
-    gallery
+    gallery,
+    getGallery
 }){
 
     console.log('should be gallery:',gallery);
@@ -13,6 +15,7 @@ function GalleryList ({
                 <GalleryItem
                 key = {item.id}
                 item = {item}
+                getGallery = {getGallery}
                 />
                 )
             )}

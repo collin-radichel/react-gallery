@@ -9,7 +9,65 @@
   margin-bottom: 1em;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App {
+  background-color: #2D93AD;
 }
 
+.App-title {
+  font-size: 80px;
+}
+
+.cardImage {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.enlargedCardImage {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.cardColumns {
+  display: inline-grid;
+  margin: 10px 10px 10px 10px;
+  /* background-color: #DE8F6E; */
+  border-radius: 5px;
+}
+
+.cardHeader {
+  background-color: #DE8F6E;
+}
+
+.card {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.likeBtn {
+  margin: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.loveBtn {
+  margin: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.seeDescriptionBtn {
+  margin: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
+
+.footer {
+  margin: 3px;
+  box-shadow: 0 4px 6px #291528;
+}
