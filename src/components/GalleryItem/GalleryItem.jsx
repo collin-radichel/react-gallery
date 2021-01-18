@@ -17,8 +17,6 @@ function GalleryItem({ item, getGallery }) {
   const toggleEnlargeImage = () => {
     Swal.fire({
         imageUrl: item.path,
-        imageWidth: 800,
-        imageHeight: 800,
         imageAlt: 'Custom image',
       })
   };
