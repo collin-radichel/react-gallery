@@ -83,7 +83,7 @@ const galleryItems = [
     id: 11,
     title: "Building a PC",
     path: "images/building_friends_pc.jpeg",
-    description: "Photo of a goat taken at Glacier National Park.",
+    description: "Building my good friends first PC with him.  Always fun and I learn something new each time",
     likes: 0,
     loves: 0
   },

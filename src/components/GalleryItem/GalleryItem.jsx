@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import CardColumns from "react-bootstrap/CardColumns";
+import Swal from 'sweetalert2';
 import axios from "axios";
 
 function GalleryItem({ item, getGallery }) {
 
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-  const [isImageEnlarged, setIsImageEnlarged] = useState(false);
 
   const toggleImage = () => {
     console.log("isDescriptionVisible is:", !isDescriptionVisible);
@@ -16,8 +15,12 @@ function GalleryItem({ item, getGallery }) {
   };
 
   const toggleEnlargeImage = () => {
-    console.log("isImageEnlarged is:", !isImageEnlarged);
-    setIsImageEnlarged(!isImageEnlarged);
+    Swal.fire({
+        imageUrl: item.path,
+        imageWidth: 800,
+        imageHeight: 800,
+        imageAlt: 'Custom image',
+      })
   };
 
   const addLike = (id) => {
@@ -77,19 +80,13 @@ function GalleryItem({ item, getGallery }) {
             key={item.id}
           >
             <Card.Text className="card">Click the image to enlarge</Card.Text>
-            {isImageEnlarged ? 
-            <Card.Img
-            variant="top enlargedCardImage"
-            src={item.path}
-            onClick={() => toggleEnlargeImage(item.id)}
-          />
-            :
+            
             <Card.Img
               variant="top cardImage"
               src={item.path}
               onClick={() => toggleEnlargeImage(item.id)}
             />
-            }
+            
             
             <Card.Body className="cardBody">
               <Card.Title className="card">{item.title}</Card.Title>
