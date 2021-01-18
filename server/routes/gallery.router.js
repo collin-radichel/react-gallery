@@ -16,6 +16,17 @@ router.put('/like/:id', (req, res) => {
     res.sendStatus(200);
 }); // END PUT Route
 
+router.put('/love/:id', (req,res) => {
+    console.log(req.params.id);
+    const galleryId = req.params.id;
+    for (const galleryItem of galleryItems) {
+        if (galleryItem.id == galleryId) {
+            galleryItem.loves += 1;
+        }
+    }
+    res.sendStatus(200);
+})
+
 // GET Route
 router.get('/', (req, res) => {
     res.send(galleryItems);

@@ -31,6 +31,17 @@ function GalleryItem({ item, getGallery }) {
       });
   }; // end addLike
 
+  const addLove = (id) => {
+      console.log('this is id in addLove:', id);
+      axios.put(`/gallery/love/${id}`)
+      .then((response) => {
+          getGallery();
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
   return (
     <CardColumns className="cardColumns">
       {isDescriptionVisible ? (
@@ -84,7 +95,7 @@ function GalleryItem({ item, getGallery }) {
               <Card.Title className="card">{item.title}</Card.Title>
               <Card.Text className="reactions">👍 {item.likes}</Card.Text>
               <Card.Text className="reactions">❤️ {item.loves}</Card.Text>
-              <Button className="loveBtn">❤️</Button>
+              <Button className="loveBtn" onClick = {() => addLove(item.id)}>❤️</Button>
               <Button className="likeBtn" onClick={() => addLike(item.id)}>👍</Button>
             </Card.Body>
             <Card.Footer className="footer">
