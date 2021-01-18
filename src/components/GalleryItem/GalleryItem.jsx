@@ -77,9 +77,8 @@ function GalleryItem({ item, getGallery }) {
             className="p-3 card"
             key={item.id}
           >
-            <Card.Text className="card">Click the image to enlarge</Card.Text>
-            
             <Card.Img
+              className="image"
               variant="top cardImage"
               src={item.path}
               onClick={() => toggleEnlargeImage(item.id)}
@@ -87,20 +86,19 @@ function GalleryItem({ item, getGallery }) {
             
             
             <Card.Body className="cardBody">
-              <Card.Title className="card">{item.title}</Card.Title>
-              <Card.Text className="reactions">👍 {item.likes}</Card.Text>
-              <Card.Text className="reactions">❤️ {item.loves}</Card.Text>
+              <Card.Title className="galleryTitle">{item.title}</Card.Title>
+              <Card.Text className="reactions">❤️ {item.loves} 👍 {item.likes}</Card.Text>
               <Button className="loveBtn" onClick = {() => addLove(item.id)}>❤️</Button>
               <Button className="likeBtn" onClick={() => addLike(item.id)}>👍</Button>
             </Card.Body>
-            <Card.Footer className="footer">
+            <Card.Footer>
               <div>
                 <Button className="seeDescriptionBtn" onClick={() => toggleImage(item.id)}>
                   See Description
                 </Button>
               </div>
               <small className="text-muted">
-                Click the button to see more info!
+                *Click the photo to enlarge
               </small>
             </Card.Footer>
           </Card>
