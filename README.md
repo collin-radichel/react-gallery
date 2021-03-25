@@ -1,8 +1,3 @@
-![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
-
 # Gallery of my life
 
 _Duration: 2-day weekend challenge_
@@ -20,6 +15,12 @@ The data is stored in file: server ->
                                 modules ->
                                     gallery.data.js
 
+### Prerequisites
+
+Link to software that is required to install the app (e.g. node).
+
+- [Node.js](https://nodejs.org/en/)
+
 
 ## Local Installation Directions
 
@@ -35,5 +36,12 @@ The data is stored in file: server ->
 - Build and run the client:
    - `npm run client`
 
+## Acknowledgement
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped me with the skills to make this application.
+
+Special thanks to my instructor: [Dane Smith]()
+
 ## Questions? I would love to connect!
-Email - [radichel.collin@gmail.com](mailto:radichel.collin@gmail.com)
+Email me at - [radichel.collin@gmail.com](mailto:radichel.collin@gmail.com)
+OR
+Send me a message on [LinkedIn](https://www.linkedin.com/in/collin-radichel/)
