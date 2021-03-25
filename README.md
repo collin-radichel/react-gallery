@@ -1,9 +1,26 @@
-# Project Name
+# Gallery of my life
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Duration: 2-day weekend challenge
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This is a react-app to display images and descriptions.  Data for this project lives in a file, not a database.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+The data is stored in file: server ->
+                                modules ->
+                                    gallery.data.js
+
+
+## Local Installation Directions
+
+- Fork this repository,
+- Clone contents within your terminal:
+   - `git clone <repoUrl.git>`
+- Navigate into the project directory:
+   - `cd projectFolderName`
+- Install dependencies:
+   - `npm install`
+- Run the server:
+   - `npm run server`
+- Build and run the client:
+   - `npm run client`
