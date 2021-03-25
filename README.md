@@ -2,9 +2,11 @@
 
 _Duration: 2-day weekend challenge_
 
-## Screenshot
+## Screenshots
 
 ![react-gallery](https://user-images.githubusercontent.com/73554031/112496652-ea241500-8d52-11eb-8f3d-e5120cbbcda7.png)
+![modal-enlarged](https://user-images.githubusercontent.com/73554031/112498811-df6a7f80-8d54-11eb-8f5f-8536565776fb.png)
+![description](https://user-images.githubusercontent.com/73554031/112498846-eabdab00-8d54-11eb-8913-d13dd0468920.png)
 
 
 ## Description
